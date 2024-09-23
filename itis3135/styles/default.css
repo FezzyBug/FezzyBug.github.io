@@ -54,6 +54,11 @@ footer ul li a {
     color: #d2d5dd;
 }
 
+.design a {
+    color: #d2d5dd;
+    text-decoration: none;
+}
+
 /* Image styling for webpage - applied to introduction page for now*/
 figure {
     margin: 20px auto;
