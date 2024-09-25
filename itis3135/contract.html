@@ -8,15 +8,7 @@
 </head>
 <body>
 <header>
-    <h1>Zef Vargas || ITIS 3135 || Contract</h1>
-    <nav>
-        <ul>
-            <li><a href="./">Home</a></li>
-            <li><a href="introduction.html">Introduction</a></li>
-            <li><a href="contract.html">Contract</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </nav>
+    <div data-include="components/header.html"></div>
 </header>
 
 <main>
@@ -30,22 +22,12 @@
 </main>
 
 <footer>
-    <ul>
-        <li><a href="https://www.charlotte.edu">UNCC Home Page</a></li>
-        <li><a href="https://github.com/FezzyBug">GitHub Account Repo</a></li>
-        <li><a href="https://github.com/FezzyBug/FezzyBug.github.io">GitHub.io Page</a></li>
-        <li><a href="https://www.freecodecamp.org/zef01">FreeCodeCamp Profile</a></li>
-        <li><a href="https://www.codecademy.com/profiles/zef01">Codecademy Profile</a></li>
-        <li><a href="https://www.linkedin.com/in/zef-vargas/">LinkedIn Profile</a></li>
-    </ul>
-    <p class="design"><a href="zefvargasdesigns.co/index.html">Designed by Zef Vargas's Designs &copy; 2024</a></p>
-
-    <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
-        <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
-    </a>
-    <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
-        <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
-    </a>
+    <div data-include="components/footer.html"></div>
 </footer>
+<script>
+    document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+    document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+</script>
+<script src="scripts/HTMLInclude.min.js"></script>
 </body>
 </html>
