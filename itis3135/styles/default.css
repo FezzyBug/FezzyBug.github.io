@@ -29,6 +29,12 @@ nav ul li a {
     text-decoration: none;
 }
 
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
 main {
     padding: 20px;
 }
