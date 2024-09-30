@@ -112,3 +112,15 @@ tr:nth-child(even) {
 tr:nth-child(odd) {
     background-color: #fff;
 }
+
+
+/* Form Styling */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
