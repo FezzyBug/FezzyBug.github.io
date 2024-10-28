@@ -1,4 +1,10 @@
 /* General styles applied to the navigation links and footer elements */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%; /* Percentage width for responsive scaling */
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -124,3 +130,31 @@ form {
     border-radius: 8px;
 }
 
+
+
+/* Desktop Styles (default, no media query needed if already styled) */
+
+/* Tablet Styles */
+@media (max-width: 980px) {
+    main {
+        width: 95%;
+    }
+    /* Example changes for tablets */
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+    main {
+        width: 100%;
+        padding: 10px;
+    }
+    header h1 {
+        font-size: 1.5rem; /* Adjust font sizes for mobile */
+    }
+    nav ul li {
+        margin: 5px 0;
+    }
+}
