@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dungeon Gremlins || BYO Intro</title>
+  <link rel="stylesheet" href="styles/default.css">
+  <script src="scripts/survey.js" defer></script>
+</head>
+<body>
+<header>
+  <div data-include="components/header.html"></div>
+</header>
+
+<main>
+  <h2>BYO Intro</h2>
+  <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+
+  <form id="introForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" required><br>
+
+    <label for="mascot">Mascot:</label>
+    <input type="text" id="mascot" required><br>
+
+    <label for="image">Image:</label>
+    <input type="file" id="image" accept=".jpg, .jpeg, .png" required><br>
+
+    <label for="caption">Image Caption:</label>
+    <input type="text" id="caption" required><br>
+
+    <label for="personalBackground">Personal Background:</label>
+    <input type="text" id="personalBackground" required><br>
+
+    <label for="professionalBackground">Professional Background:</label>
+    <input type="text" id="professionalBackground" required><br>
+
+    <label for="academicBackground">Academic Background:</label>
+    <input type="text" id="academicBackground" required><br>
+
+    <label for="webDevBackground">Background in Web Development:</label>
+    <input type="text" id="webDevBackground" required><br>
+
+    <label for="computerPlatform">Primary Computer Platform:</label>
+    <input type="text" id="computerPlatform" required><br>
+
+    <div id="coursesContainer">
+      <label>Courses Currently Taking:</label>
+      <button type="button" onclick="addCourseField()">Add Course</button>
+    </div>
+
+    <label for="funnyThing">Funny Thing:</label>
+    <input type="text" id="funnyThing"><br>
+
+    <label for="anythingElse">Anything Else:</label>
+    <input type="text" id="anythingElse"><br>
+
+    <label>
+      <input type="checkbox" id="agreement" required>
+      I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.
+    </label><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </form>
+
+  <div id="resultContainer" style="display:none;">
+    <!-- Displayed content after form submission -->
+  </div>
+</main>
+
+<footer>
+  <div data-include="components/footer.html"></div>
+</footer>
+<script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
