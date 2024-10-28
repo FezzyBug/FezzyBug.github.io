@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dungeon Gremlins || First JavaScripts</title>
+  <link rel="stylesheet" href="styles/default.css">
+  <script src="scripts/defaultscripts.js" defer></script>
+</head>
+<body>
+
+<header>
+  <div data-include="components/header.html"></div>
+</header>
+
+<main>
+  <h2>First JavaScripts</h2>
+  <h3 id="date-time-display"></h3>
+
+  <!-- User Prompts -->
+  <form id="user-form">
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" required>
+
+    <label for="mood">How are you feeling?</label>
+    <input type="text" id="mood" required>
+
+    <button type="button" onclick="displayGreeting()">Submit</button>
+  </form>
+
+  <p id="greeting-message"></p>
+
+  <!-- Favorite Number to Polygon -->
+  <label for="favoriteNumber">Enter your favorite number (0-10):</label>
+  <input type="number" id="favoriteNumber">
+  <button onclick="displayPolygon()">Get Polygon Name</button>
+
+  <!-- Brand-themed Buttons -->
+  <div id="brandButtons">
+    <button onclick="randomGremlinMessage()">Random Gremlin Message</button>
+    <button onclick="boostAudio()">Boost Audio Power</button>
+    <button onclick="findLostParts()">Find Lost Parts</button>
+    <button onclick="generateSqueak()">Generate Gremlin Squeak</button>
+  </div>
+</main>
+
+<footer>
+  <div data-include="components/footer.html"></div>
+</footer>
+
+<script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>

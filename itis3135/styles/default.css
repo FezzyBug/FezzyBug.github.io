@@ -158,3 +158,37 @@ form {
         margin: 5px 0;
     }
 }
+
+
+/* Brand-themed buttons styling */
+#userForm{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    margin-top: 15px;
+
+}
+
+
+#brandButtons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+#brandButtons button {
+    flex: 1 1 45%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#brandButtons button:hover {
+    background-color: #333;
+}
