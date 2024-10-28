@@ -14,13 +14,13 @@
   <p>"An immersive journey into audio fidelity"</p>
   <nav>
     <ul>
-      <li><a href="#" onclick="showSection('what')">Home</a></li>
-      <li><a href="#" onclick="showSection('who')">About Me</a></li>
-      <li><a href="#" onclick="showSection('when')">Best Times to Listen</a></li>
-      <li><a href="#" onclick="showSection('where')">Best Listening Environments</a></li>
-      <li><a href="#" onclick="showSection('how')">How to Choose Headphones</a></li>
-      <li><a href="#" onclick="showSection('why')">Why I Love Headphones</a></li>
-      <li><a href="#" onclick="showSection('ai-prompts')">AI Prompts</a></li>
+      <li><a href="#" id="link-what">Home</a></li>
+      <li><a href="#" id="link-who">About Me</a></li>
+      <li><a href="#" id="link-when">Best Times to Listen</a></li>
+      <li><a href="#" id="link-where">Best Listening Environments</a></li>
+      <li><a href="#" id="link-how">How to Choose Headphones</a></li>
+      <li><a href="#" id="link-why">Why I Love Headphones</a></li>
+      <li><a href="#" id="link-ai-prompts">AI Prompts</a></li>
     </ul>
   </nav>
 </header>
@@ -77,7 +77,7 @@
     <div class="figure">
       <img src="images/fostex_900.jpg" alt="Lawton Modded Fostex TH-900">
       <figcaption>Lawton Modded Fostex TH-900: My customized masterpiece.</figcaption>
-      <p style="font-style: italic;">I’ve always enjoyed the process of tweaking and personalizing my gear, and this modded TH-900 is a perfect blend of art and performance.</p>
+      <p> <em>I’ve always enjoyed the process of tweaking and personalizing my gear, and this modded TH-900 is a perfect blend of art and performance.</em></p>
     </div>
   </section>
 
@@ -91,7 +91,7 @@
     <div class="figure">
       <img src="images/lcd_x.jpg" alt="Audeze LCD-X">
       <figcaption>Audeze LCD-X: Bringing out the layers in every track.</figcaption>
-      <p style="font-style: italic;">I love using the LCD-X during these times; its rich, planar sound brings out textures I would otherwise miss.</p>
+      <p><em>I love using the LCD-X during these times; its rich, planar sound brings out textures I would otherwise miss.</em></p>
     </div>
   </section>
 
@@ -126,7 +126,7 @@
     <div class="figure">
       <img src="images/meze_elite.jpg" alt="Meze Elite Headphones">
       <figcaption>Meze Elite: Luxury and sound perfection combined.</figcaption>
-      <p style="font-style: italic;">Listening in a calm setting with the Meze Elite lets me fully appreciate its balanced, luxurious sound.</p>
+      <p><em>Listening in a calm setting with the Meze Elite lets me fully appreciate its balanced, luxurious sound.</em></p>
     </div>
 
   </section>
@@ -179,7 +179,7 @@
     <div class="figure">
       <img src="images/zmf_aeo.jpg" alt="ZMF Aeolus">
       <figcaption>ZMF Aeolus: A warm embrace of sound.</figcaption>
-      <p style="font-style: italic;">The Aeolus brings warmth and organic sound that remains unmatched as one of my favorite headphones (following the criteria above).</p>
+      <p><em>The Aeolus brings warmth and organic sound that remains unmatched as one of my favorite headphones (following the criteria above).</em></p>
     </div>
   </section>
 
@@ -189,7 +189,7 @@
     <div class="figure">
       <img src="images/fostex_900.jpg" alt="Fostex TH-900 Headphones">
       <figcaption>Fostex TH-900: A defining moment in my audio journey.</figcaption>
-      <p style="font-style: italic;">Listening with the TH-900 was a revelation; it opened up a world of sound I didn’t know existed.</p>
+      <p><em>Listening with the TH-900 was a revelation; it opened up a world of sound I didn’t know existed.</em></p>
     </div>
   </section>
 
@@ -202,6 +202,9 @@
       <li>"Warm and inviting image of Meze Elite headphones in a cozy setting."</li>
       <li>"Build me a basic framework for a hobbyist website."</li>
       <li>"Remove the inline styling I have in index.html and add it to the external link style sheet"</li>
+      <li>"How would I move these scripts to an external js file?"</li>
+      <li>"Is there even a way to fix this?"</li>
+
     </ul>
   </section>
 </main>
@@ -209,10 +212,10 @@
 <footer>
   <p>Designed by Zef Vargas's Designs &copy; 2024</p>
   <a href="https://validator.w3.org/check?uri=referer">
-    <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
+    <img src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!" id="validator-html">
   </a>
   <a href="https://jigsaw.w3.org/css-validator/check/referer">
-    <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+    <img  src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" id="validator-css">
   </a>
 
 </footer>

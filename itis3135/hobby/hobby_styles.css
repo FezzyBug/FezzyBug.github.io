@@ -58,7 +58,7 @@ section {
     margin: 20px;
     border-radius: 8px;
 }
-section.active {
+.active {
     display: block;
 }
 
@@ -131,7 +131,7 @@ footer {
     max-height: 1000px;
 }
 
-#carousel-section h2 {
+#carousel-section{
     color: #e0e0e0;
     margin-bottom: 20px;
 }
@@ -170,6 +170,21 @@ footer {
 }
 
 /* Active Slide Styling */
-.carousel-slide.active {
+:not(.active){
     opacity: 1;
 }
+
+
+/* Validator Styling*/
+#validator-html{
+    border:0;
+    width:88px;
+    height:31px;
+}
+
+#validator-css{
+    border:0;
+    width:88px;
+    height:31px;
+}
+
