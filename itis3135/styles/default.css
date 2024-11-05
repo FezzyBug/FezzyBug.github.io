@@ -197,3 +197,8 @@ form {
 #brandButtons button:hover {
     background-color: #333;
 }
+
+/* Drawing Style formatting*/
+#drawing-canvas {
+    padding: 10px;
+}
