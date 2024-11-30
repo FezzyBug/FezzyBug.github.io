@@ -2,28 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>About Us - Scene Seen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - My Website</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <script defer src="scripts/script.js"></script>
 </head>
 <body>
-<header>
-    <nav>
-        <ul id="navbar">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+<div id="header"></div>
 <main>
     <h1>About Us</h1>
-    <p>This will serve as both the lineage/history page and what my fictitious company is about</p>
+
+    <section id="mission">
+        <h2>Our Mission</h2>
+        <p>At Scene Seen, our mission is to capture and recreate your most cherished moments in stunning virtual reality, allowing you to relive experiences like never before.</p>
+    </section>
+
+    <section id="history">
+        <h2>Our History</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>2018</h3>
+                <p>Scene Seen was founded by a group of VR enthusiasts determined to revolutionize event recording.</p>
+                <div class="more-info">
+                    <p>In 2018, we started with a small team passionate about VR technology...</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <h3>2020</h3>
+                <p>Expanded our services internationally, covering events in over 10 countries.</p>
+                <div class="more-info">
+                    <p>By 2020, we had established partnerships worldwide...</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <h3>2022</h3>
+                <p>Launched our proprietary VR playback platform, enhancing user experience.</p>
+                <div class="more-info">
+                    <p>Our platform provides seamless VR content streaming...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team">
+        <h2>Thank You From Scene Seen</h2>
+        <div class="team-members">
+            <div class="team-member">
+                <img src="images/scene_seen.png" alt="team">
+                <h3>The Scene Seen Team</h3>
+                <p>Head of VR Technology</p>
+            </div>
+
+        </div>
+    </section>
 </main>
-<footer>
-    <p>&copy; 2024 My Website. All Rights Reserved.</p>
-</footer>
+<div id="footer"></div>
+
 </body>
 </html>
