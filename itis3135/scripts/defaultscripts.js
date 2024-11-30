@@ -42,5 +42,3 @@ function findLostParts() {
 function generateSqueak() {
     alert("Dungeon Gremlin: *squeak squeak*");
 }
-
-

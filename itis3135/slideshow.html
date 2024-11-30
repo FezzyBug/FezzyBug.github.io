@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dungeon Gremlins || ITIS 3135 || Slideshow Gallery</title>
+  <link rel="stylesheet" href="styles/default.css">
+  <script src="scripts/slideshow.js" defer></script>
+</head>
+<body>
+<header>
+  <div data-include="components/header.html"></div>
+</header>
+
+<main>
+  <h2>Slideshow Gallery</h2>
+  <p class="tagline">Showcasing items with letters from my name!</p>
+
+  <div id="slideshow">
+    <div class="slides">
+      <div class="slide active">
+        <img src="images/jungle.webp" alt="J - A dense jungle">
+        <div class="caption">J - A dense jungle</div>
+      </div>
+      <div class="slide">
+        <img src="images/ocean.webp" alt="O - A serene ocean">
+        <div class="caption">O - A serene ocean</div>
+      </div>
+      <div class="slide">
+        <img src="images/zebra.webp" alt="Z - A gallant zebra">
+        <div class="caption">Z - A gallant zebra</div>
+      </div>
+      <div class="slide">
+        <img src="images/eagle.webp" alt="E - A soaring eagle">
+        <div class="caption">E - A soaring eagle</div>
+      </div>
+      <div class="slide">
+        <img src="images/flowers.webp" alt="F - A field of flowers">
+        <div class="caption">F - A field of flowers</div>
+      </div>
+    </div>
+    <div id="navigation">
+      <button id="prev">Previous</button>
+      <button id="next">Next</button>
+    </div>
+  </div>
+
+  <h3>AI Prompts Used</h3>
+  <ul>
+    <li>"Let's generate images that start with each letter of 'Jozef'."</li>
+    <li>J - "a lush and vibrant jungle scene."</li>
+    <li>O - "a tranquil ocean scene under a stunning sunset sky."</li>
+    <li>Z - "a zebra standing gracefully in a golden savannah during sunset."</li>
+    <li>E - "a majestic eagle soaring high in the sky over a mountainous landscape."</li>
+    <li>F - "a vibrant and colorful flower garden in full sunlight."</li>
+  </ul>
+
+  <p>Images generated with DALL·E 3, using OpenAI tools.</p>
+</main>
+
+<footer>
+  <div data-include="components/footer.html"></div>
+</footer>
+<script src="scripts/HTMLInclude.min.js"></script>
+<script src="scripts/script.js"></script>
+</body>
+</html>

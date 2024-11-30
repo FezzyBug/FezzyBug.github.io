@@ -21,14 +21,29 @@ header {
 }
 
 header {
+    background-color: #333;
     color: #E8EBE4;
+    padding: 10px;
+    text-align: center;
+}
+
+header li{
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+
+
+header {
+    color: #B3C0A4;
     margin: 0;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
+
 
 nav ul li a {
     color: #E8EBE4;
@@ -37,7 +52,8 @@ nav ul li a {
 
 
 a {
-    color: #666;
+    display: inline-block;
+    color: #B3C0A4;
     text-decoration: none;
 }
 
@@ -51,10 +67,9 @@ main {
 /* Footer styling */
 footer {
     background-color: #333;
-    color: #fff;
+    color: #B3C0A4;
     padding: 10px;
     text-align: center;
-    width: 100%;
     margin-top: auto;
 
 }
@@ -71,11 +86,11 @@ footer ul li {
 }
 
 footer ul li a {
-    color: #d2d5dd;
+    color: #B3C0A4;
 }
 
 .design a {
-    color: #d2d5dd;
+    color: #b3c0a4;
     text-decoration: none;
 }
 
@@ -154,9 +169,8 @@ form {
 @media (max-width: 600px) {
     main {
         width: 100%;
-        padding: 10px;
     }
-    header h1 {
+    header {
         font-size: 1.5rem; /* Adjust font sizes for mobile */
     }
     nav ul li {
@@ -201,4 +215,54 @@ form {
 /* Drawing Style formatting*/
 #drawing-canvas {
     padding: 10px;
+}
+
+
+
+/* Slideshow styling*/
+#slideshow {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+.slide {
+    display: none;
+    position: relative;
+}
+
+.slide[class~="active"] {
+    display: block;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    /*border: 2px solid #ccc;*/
+}
+
+.caption {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.slide[class~="active"] .caption  {
+    opacity: 1; /* Only the active slide's caption is visible */
+}
+
+
+#prev, #next{
+    background-color: #333;
+    color: #B3C0A4;
+
 }
